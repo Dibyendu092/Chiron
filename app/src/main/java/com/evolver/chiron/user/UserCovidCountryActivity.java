@@ -75,7 +75,7 @@ public class UserCovidCountryActivity extends AppCompatActivity {
     }
 
     private void apiCall(String countryName) {
-        String URL = "https://corona.lmao.ninja/v2/countries/"+countryName;
+        String URL = "https://disease.sh/v3/covid-19/countries/"+countryName;
         StringRequest request = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

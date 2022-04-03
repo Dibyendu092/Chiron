@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClientPrivate {
     ApiClientPrivate context = this;
-    public static final String BASE_URL = "https://corona.lmao.ninja/v2/";
+    public static final String BASE_URL = "https://disease.sh/v3/covid-19/";
     static Retrofit retrofit = null;
     @RequiresApi(api = Build.VERSION_CODES.N)
     public static Retrofit getApiClient() {
